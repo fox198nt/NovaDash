@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#game {
+    border: #11BB55 5px solid;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    display: inline-flex;
+    align-items: center;
+}
+
+.lane {
+    border: 5px white solid;
+    margin: 5px;
+    height: 70px;
+    padding: 10px;
+    width: 33%;
+    height: 90%;
+}
+
+#player {
+    background-color: cadetblue;
+    margin: auto;
+    position: relative;
+    top: 60%;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+    transition: ease 0.5s;
+}
+.jump {
+    background-color: rgb(147, 200, 202) !important;    
+    transform: scale(1.25);
+    transition: ease 0.5s;
+}

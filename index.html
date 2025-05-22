@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EL GAM</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="game">
+    <div class="lane" id="l1">
+        <p>Lane 1</p>
+    </div> 
+
+    <div class="lane" id="l2">
+        <p>Lane 2</p>
+    </div>       
+
+    <div class="lane" id="l3">
+        <p>Lane 3</p>
+    </div>
+
+    <div id="player">O - O</div>
+    <div id="block">>:D</div>
+</div>
+<h2>DEBUG BUTTONS</h2>
+<button onclick="movePlayer(l1)">l1</button>
+<button onclick="movePlayer(l1)">l2</button>
+<button onclick="movePlayer(l1)">l3</button>
+<button onclick="player.classList.add('jump')">add jump class</button>
+<button onclick="player.classList.remove('jump')">remove jump class</button>
+<button onclick="player.classList.add('crouch')">add crouch class</button>
+<button onclick="player.classList.remove('crouch')">remove crouch class</button>
+
+<script src="script.js"></script>
+</body>
+</html>
