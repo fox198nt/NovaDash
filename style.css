@@ -10,8 +10,10 @@ body {
     width: 90%;
     height: 500px;
     margin: auto;
-    display: inline-flex;
+    display: flex; /* Changed from inline-flex to flex for better positioning */
     align-items: center;
+    position: relative; /* Add this */
+    overflow: hidden; /* Hide block when it goes beyond game boundaries */
 }
 
 .lane {
@@ -28,15 +30,53 @@ body {
     margin: auto;
     position: relative;
     top: 60%;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
-    padding: 10px;
-    font-size: 30px;
     transition: ease 0.5s;
+    display: flex;
+    align-items: center;
 }
 .jump {
-    background-color: rgb(147, 200, 202) !important;    
+    background-color: rgb(112, 168, 169) !important;    
     transform: scale(1.25);
     transition: ease 0.5s;
+}
+
+.crouch {
+    background-color: rgb(86, 143, 144) !important;    
+    transform: scale(0.75);
+    transition: ease 0.5s;
+}
+
+#block {
+    position: absolute;
+    margin: auto;
+}
+
+button {
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    font-size: medium;
+    transition: ease 0.5s;
+    border-radius: 10px;
+}
+
+button:hover {
+    animation: rotato 0.5s;
+}
+
+@keyframes rotato {
+    0% {
+    }
+    10% {
+        transform: rotate(-45deg) scale(0.9);
+    }
+    75% {
+        transform: rotate(400deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg );
+    }
 }

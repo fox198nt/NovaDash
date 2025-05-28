@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EL GAM</title>
-<link href="style.css" rel="stylesheet">
+    <title>NovaDash</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="logo-guy.svg">
 </head>
 <body>
-<div id="game">
-    <div class="lane" id="l1">
-        <p>Lane 1</p>
-    </div> 
+    <div id="game">
+        <div class="lane" id="l1">
+            <p>Lane 1</p>
+        </div> 
 
-    <div class="lane" id="l2">
-        <p>Lane 2</p>
-    </div>       
+        <div class="lane" id="l2">
+            <p>Lane 2</p>
+        </div>       
 
-    <div class="lane" id="l3">
-        <p>Lane 3</p>
+        <div class="lane" id="l3">
+            <p>Lane 3</p>
+        </div>
+
+        <div id="player">
+            <svg width="26.458334mm" height="26.458334mm" viewBox="0 0 26.458334 26.458334">
+                <g transform="translate(-91.770836,-135.27083)">
+                    <circle style="fill:#fff;stroke-width:3.93138;" cx="-111.84092" cy="140.37741" r="2.9885254" transform="scale(-1,1)" />
+                    <circle style="fill:#fff;stroke-width:3.93138;" cx="-98.159073" cy="140.37741" r="2.9885254" transform="scale(-1,1)" />
+                    <path style="fill:#fff;stroke:#fff;stroke-width:0.9;stroke-linecap:round;" d="m 102.611,138.42202 h 4.778" />
+                </g>
+            </svg>
+        </div>
+        <div id="block">
+            <img src="block.svg" width="125px">
+        </div>
     </div>
 
-    <div id="player">O - O</div>
-    <div id="block">>:D</div>
-</div>
-<h2>DEBUG BUTTONS</h2>
-<button onclick="movePlayer(l1)">l1</button>
-<button onclick="movePlayer(l1)">l2</button>
-<button onclick="movePlayer(l1)">l3</button>
-<button onclick="player.classList.add('jump')">add jump class</button>
-<button onclick="player.classList.remove('jump')">remove jump class</button>
-<button onclick="player.classList.add('crouch')">add crouch class</button>
-<button onclick="player.classList.remove('crouch')">remove crouch class</button>
+    <h2>DEBUG BUTTONS</h2>
+    <div>
+        <button onclick="movePlayer(l1)">l1</button>
+        <button onclick="movePlayer(l1)">l2</button>
+        <button onclick="movePlayer(l1)">l3</button>
+        <button onclick="player.classList.add('jump')">add jump class</button>
+        <button onclick="player.classList.remove('jump')">remove jump class</button>
+        <button onclick="player.classList.add('crouch')">add crouch class</button>
+        <button onclick="player.classList.remove('crouch')">remove crouch class</button>
+    </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
