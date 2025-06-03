@@ -10,10 +10,10 @@ body {
     width: 90%;
     height: 500px;
     margin: auto;
-    display: flex; /* Changed from inline-flex to flex for better positioning */
+    display: flex;
     align-items: center;
-    position: relative; /* Add this */
-    overflow: hidden; /* Hide block when it goes beyond game boundaries */
+    position: relative;
+    overflow: hidden;
 }
 
 .lane {
@@ -38,20 +38,22 @@ body {
     align-items: center;
 }
 .jump {
-    background-color: rgb(112, 168, 169) !important;    
+    background-color: rgb(112, 168, 169) !important;     
     transform: scale(1.25);
     transition: ease 0.5s;
 }
 
 .crouch {
-    background-color: rgb(86, 143, 144) !important;    
+    background-color: rgb(86, 143, 144) !important;     
     transform: scale(0.75);
     transition: ease 0.5s;
 }
 
-#block {
+#block, #block2 {
     position: absolute;
     margin: auto;
+    display: none; /* Initially hide block2 */
+    transform: translateX(50%);
 }
 
 button {
